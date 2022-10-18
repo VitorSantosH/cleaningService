@@ -1,0 +1,161 @@
+.header {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 15vw;
+    font-size: 1.2rem;
+    overflow-x: hidden;
+    font-weight: 600;
+    line-height: 80px;
+    align-items: center;
+    z-index: 1;
+}
+
+.headerBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100px;
+    width: 80%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.logo img {
+    max-width: 80%;
+    max-height: 100%;
+}
+
+.menus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    right: 5%;
+    width: 60%;
+   
+}
+.menus a  {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-height: 80%;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-bottom: solid 5px transparent;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.focus {
+    border-bottom: solid 5px;
+    border-color: #eeb844;
+}
+
+.menuPort {
+    display: none;
+    right: 5%;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    border-radius: 10px 10px 0px 0px;
+
+
+}
+
+.menuPort i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    transition: 0.5s;
+
+}
+
+
+
+
+.menuAnime {
+    transition: 0.5s;
+    transform: rotate(45deg);
+    z-index: 15;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+
+    .menus {
+        display: none;
+    }
+
+    .menuPort {
+        display: flex;
+    }
+
+    .headerBody {
+        position: absolute;
+        top: 0px;
+        height: 10vw;
+        min-height: 70px;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        left: -2%;
+    }
+
+    .logo img {
+        max-width: 60%;
+        max-height: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 630px) {
+
+    .logo {
+        left: -2%;
+        display: flex;
+        box-sizing: border-box;
+       
+    }
+    .logo img {
+       max-height: 8vh;
+       width: auto;
+       background-color: aliceblue;
+    }
+
+}

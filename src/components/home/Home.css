@@ -1,0 +1,120 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 16000px;
+    background-size:  auto;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+}
+.textContainer {
+    display: flex;
+    width: 100%;
+    z-index: 1;
+}
+.textPrincipal {
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: left;
+    width: 40%;
+    position: relative;
+    left: 10%;
+    box-sizing: border-box;
+
+}
+.textPrincipal h1 {
+    font-size: 70px;
+    margin: 0;
+}
+.textPrincipal h2 {
+    border-left: solid 5px white ;
+    padding-left: 5px;
+} 
+
+.Home::before{
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+.buttonContact {
+    background-color: #eeb844;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    outline: none;
+    border: solid 3px #eeb844 ;
+    border-radius: 15px;
+    font-weight: 800;
+    box-shadow: 0px 3px 10px -5px rgb(6 9 34 / 15%);
+    transition: all 0.1s ease-in-out 0s;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 30px;
+}
+
+.buttonContact:active {
+    background-color: transparent;
+    border: solid 3px #e4a216 ;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@media only screen and (max-width: 1000px) {
+    .textContainer {
+        position: relative;
+        top: 150px;
+    }
+    .textPrincipal h1   {
+        font-size: 2rem ;
+    }
+} 
+@media only screen and (max-width: 990px)  {
+    .textPrincipal {
+        width: 80%;
+    }
+    .textPrincipal h1 {
+        font-size: 2rem;
+    }
+  
+}
+@media only screen and (max-width: 600px) {
+    .buttonContact{
+        font-size: 18px;
+        height: 30px;
+        
+    }
+    .textPrincipal {
+        padding-top: 20px;
+    }
+    .textPrincipal h1, .textPrincipal h2  {
+        font-size: 1.5rem;
+    }
+    
+}  
+

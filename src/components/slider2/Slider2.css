@@ -1,0 +1,119 @@
+.slider2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10vw;
+    color: rgb(59, 59, 59);
+
+}
+
+
+.titleSlider2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.hrHorizontal {
+    width: 30vw;
+    height: 2px;
+    background-color: black;
+ 
+}
+
+
+.slider2 h3 {
+    font-weight: 600;
+    line-height: 2;
+    margin: 10px 5%;
+    color: rgb(54, 54, 54);
+    margin-top: 30px;
+    opacity: 0.6;
+}
+
+
+.slider2 a {
+    text-decoration: none;
+    color: #eeb844;
+}
+
+.parte2 .slide {
+    text-align: center;
+}
+
+.parte2 .slide img {
+    width: 80vw;
+}
+
+.parte2 .containerSlider {
+    width: 100vw;
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1200px) {
+    .parte2 {
+        display: flex;
+    }
+
+    .parte2 .containerSlider {
+        width: 50vw;
+
+    }
+
+    .parte2 .slide {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .parte2 .slide img {
+        max-width: 40vw;
+        height: auto;
+        width: auto;
+    }
+
+    .containerTitle3 {
+        display: flex;
+        justify-content: flex-start;
+        width: 40vw;
+    }
+
+    .parte2 .slider-container {
+        background-color: rgb(226, 226, 226);
+       
+    }
+
+}
+
+@media only screen and (max-width: 1300px) {
+    .slider2 {
+        margin-top: 170px;
+        
+
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .slider2 {
+        margin-top: 250px;
+        background-color: white;
+
+    }
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .slider2 {
+        margin-top: 250px;
+    }
+
+}
